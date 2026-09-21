@@ -14,6 +14,18 @@
     font-size: min(7vmin, 50px);
 }
 
+.light {
+    background-color: #f0d9b5;
+}
+
+.dark {
+    background-color: #b58863;
+}
+
+.selected {
+    background-color: #f6f669;
+}
+
 .label {
     position: absolute;
     font-size: 12px;
@@ -36,16 +48,4 @@
 
 .dark .label {
     color: #f0d9b5;
-}
-
-.light {
-    background-color: #f0d9b5;
-}
-
-.dark {
-    background-color: #b58863;
-}
-
-.selected {
-    background-color: #f6f669;
 }
