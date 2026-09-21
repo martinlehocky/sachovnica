@@ -7,8 +7,33 @@
 }
 
 .square {
+    position: relative;
     width: 80px;
     height: 80px;
+}
+
+.label {
+    position: absolute;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+.number {
+    top: 3px;
+    left: 4px;
+}
+
+.letter {
+    bottom: 3px;
+    right: 4px;
+}
+
+.light .label {
+    color: #b58863;
+}
+
+.dark .label {
+    color: #f0d9b5;
 }
 
 .light {
