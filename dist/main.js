@@ -1,5 +1,7 @@
 const board = document.getElementById("chessboard");
 const letters = "ABCDEFGH";
+const blackPieces = ["♜", "♞", "♝", "♛", "♚", "♝", "♞", "♜"];
+const whitePieces = ["♖", "♘", "♗", "♕", "♔", "♗", "♘", "♖"];
 for (let row = 0; row < 8; row++) {
     for (let col = 0; col < 8; col++) {
         const square = document.createElement("div");
@@ -9,6 +11,18 @@ for (let row = 0; row < 8; row++) {
         }
         else {
             square.classList.add("dark");
+        }
+        if (row === 0) {
+            square.textContent = blackPieces[col];
+        }
+        else if (row === 1) {
+            square.textContent = "♟";
+        }
+        else if (row === 6) {
+            square.textContent = "♙";
+        }
+        else if (row === 7) {
+            square.textContent = whitePieces[col];
         }
         if (col === 0) {
             const number = document.createElement("span");
