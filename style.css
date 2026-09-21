@@ -43,3 +43,7 @@
 .dark {
     background-color: #b58863;
 }
+
+.selected {
+    background-color: #f6f669;
+}

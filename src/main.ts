@@ -26,6 +26,11 @@ for (let row = 0; row < 8; row++) {
             square.append(letter);
         }
 
+        square.addEventListener("click", () => {
+            square.classList.add("selected");
+            setTimeout(() => square.classList.remove("selected"), 800);
+        });
+
         board.append(square);
     }
 }
